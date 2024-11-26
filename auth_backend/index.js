@@ -13,7 +13,7 @@ const jwtCheck = auth({
 
 // enforce on all endpoints
 app.use(jwtCheck);
-
+// had o a zin koulla perision khassek diri liha app.get dyalha b route b7al /courses w kadirih fiha dakchi lli khass ytl3
 app.get('/authorized', function (req, res) {
     res.send('Secured Resource');
 });
